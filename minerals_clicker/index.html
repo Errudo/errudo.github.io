@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minerals clicker</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div id="info_minerais">
+        <h1 id="nombre_minerais"></h1>
+        <h2 id="nombre_minerais_entier"></h2>
+        <h3 id="nombre_minerais_par_seconde">par seconde :</h3>
+    </div>
+    <div id="minerais_cliquable">
+        <a id="click_minerais" href="#"><img draggable="false" src="./assets/img/charbon.png" alt="minerais de charbon"></a>
+    </div>
+    <div id="amelioration_minerais_cliquable">
+        <div id="amelioration_minerais_cliquable_1">
+            <a href="#">
+                <h4>Pioche</h4>
+            </a>
+        </div>
+        <div id="amelioration_minerais_cliquable_2">
+            <a href="#">
+                <h4>Récupération automatique</h4>
+            </a>
+            <p class="pas_assez_de_minerais"></p>
+        </div>
+        <div id="amelioration_minerais_cliquable_3">
+            <a href="#">
+                <h4>Amelioration 3</h4>
+            </a>
+        </div>
+    </div>
+</body>
+
+<script>
+
+const minerais_img = document.querySelector('#click_minerais');
+const nb_minerais = document.querySelector('#nombre_minerais');
+const nb_minerais_entier = document.querySelector('#nombre_minerais_entier');
+const nb_minerais_seconde = document.querySelector('#nombre_minerais_par_seconde');
+const h4 = document.querySelector('h4');
+const amelioration_1 = document.querySelector('#amelioration_minerais_cliquable_1');
+const amelioration_2 = document.querySelector('#amelioration_minerais_cliquable_2');
+const bouton_refus = document.querySelector('[name="pas_assez_de_minerais"]')
+
+let minerais = 0;
+let minerais_par_clique = 1;
+let minerais_par_seconde = 0;
+
+function classNonRemove() {
+    h4.classList.remove('non');
+}
+function classNonAdd() {
+    h4.classList.add('non');
+}
+
+// minerais_img.addEventListener('click', event => {
+//     minerais = minerais + minerais_par_clique;
+//     update_html_page()
+// });
+
+// amelioration_1.addEventListener('click', event => {
+//     if(minerais >= 10){
+//         console.log("Vous avez obtenu l'amélioration");
+//         minerais_par_clique = minerais_par_clique + 1;
+//         minerais -= 10;
+//         classNonRemove();
+//         update_html_page()
+//     }else{
+//         classNonAdd();
+//     }
+// });
+
+amelioration_2.addEventListener('click', event => {
+    if(minerais >= 100){
+        minerais -= 100;
+        setInterval(function(){
+            minerais = minerais + 1;
+            update_html_page();
+        },1000)}
+    // }else{
+    //     bouton_refus.classList.add('bouton_non');
+    // }
+});
+
+</script>
+<script src="./assets/js/script.js"></script>
+</html>
