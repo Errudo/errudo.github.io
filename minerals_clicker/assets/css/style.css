@@ -92,9 +92,12 @@ h3{
     font-size: 1.2rem;
 }
 
-h4{
-    padding: 20px 40px;
-    border-radius: 15px;
-    background-color: rgb(37, 35, 35);
-    color: rgb(56, 207, 207);
+.btn_boite{
+    height: 100%;
+    width: 30%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }

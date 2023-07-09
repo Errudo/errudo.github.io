@@ -8,14 +8,35 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <div id="info_minerais">
-        <h1 id="nombre_minerais"></h1>
-        <h2 id="nombre_minerais_entier"></h2>
-        <h3 id="nombre_minerais_par_seconde">par seconde :</h3>
+    
+    <div id="minerai_boite">
+        <div id="info_minerais">
+            <h1 id="nombre_minerais"></h1>
+            <h2 id="nombre_minerais_entier"></h2>
+            <h3 id="nombre_minerais_par_seconde">par seconde :</h3>
+        </div>
+        <div id="minerais_cliquable">
+            <a id="click_minerais" href="#"><img draggable="false" src="./assets/img/charbon.png" alt="minerais de charbon"></a>
+        </div>
     </div>
-    <div id="minerais_cliquable">
-        <a id="click_minerais" href="#"><img draggable="false" src="./assets/img/charbon.png" alt="minerais de charbon"></a>
+    <div id="btn_boite">
+        <div class="btn_amelioration">
+            <a href="#">
+                <h4 id="pioche_ameliorable">Pioche</h4>
+            </a>
+        </div>
+        <div class="btn_amelioration">
+            <a href="#">
+                <h4 id="auto_clicker"></h4>
+            </a>
+        </div>
+        <div class="btn_amelioration">
+            <a href="#">
+                <h4 id="mineur"></h4>
+            </a>
+        </div>
     </div>
+    
     <div id="amelioration_minerais_cliquable">
         <div id="amelioration_minerais_cliquable_1">
             <a href="#">
@@ -34,7 +55,7 @@
             </a>
         </div>
     </div>
-    <p>test</p>
+
 </body>
 
 <script>
