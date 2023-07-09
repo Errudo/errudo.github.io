@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minerals clicker</title>
+</head>
+<body>
+    <div id="minerai_boite">
+        <div id="info_minerais">
+            <h1 id="nombre_minerais">test</h1>
+            <h2 id="nombre_minerais_entier">voir</h2>
+            <h3 id="nombre_minerais_par_seconde">par seconde : je test si c bien au milieu</h3>
+        </div>
+        <div id="minerais_cliquable">
+            <a id="click_minerais" href="#"><img draggable="false" src="./assets/img/charbon.png" alt="minerais de charbon"></a>
+        </div>
+    </div>
+    <div id="btn_boite">
+        <p id="boutique">Boutique</p>
+        <div class="btn_boite_interieur">
+            <div class="btn_amelioration">
+                <a href="#">
+                    <h4 id="pioche_ameliorable">Pioche</h4>
+                </a>
+                <p id="cout_pioche_ameliorable">10</p>
+            </div>
+            <div class="btn_amelioration">
+                <a href="#">
+                    <h4 id="mineur_ameliorable">Mineur</h4>
+                </a>
+                <p id="cout_mineur_ameliorable">100</p>
+            </div>
+            <div class="btn_amelioration">
+                <a href="#">
+                    <h4 id="wagon_ameliorable">Wagon</h4>
+                </a>
+                <p id="cout_wagon_ameliorable">400</p>
+            </div>
+        </div>
+    </div>
+</body>
+<style>
+    @import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+    a{
+        text-decoration: none;
+    }
+    body{
+        position: relative;
+        background-color: bisque;
+        height: 100vh;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        overflow: hidden;
+    }
+
+    #minerai_boite{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 60%;
+        height: 100vh;
+    }
+    #info_minerais{
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        padding: 10% 0;
+        height: 35vh;
+        text-align: center;
+    }
+    #info_minerais h1{
+        width: 100%;
+        font-size: 2rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: 5px 0;
+    }
+    #info_minerais h2{
+        width: 100%;
+        font-size: 1.7rem;
+        font-weight: 500;
+        padding: 5px 0;
+    }
+    #info_minerais h3{
+        width: 100%;
+        font-size: 1.3rem;
+        font-weight: 500;
+        padding: 5px 0;
+    }
+    #minerais_cliquable{
+        height: 65vh;
+    }
+    #minerais_cliquable img{
+        width: 60%;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #btn_boite{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 30%;
+        height: 100vh;
+    }
+    #boutique{
+        position: absolute;
+        top: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 0 20px;
+        font-size: 1.7rem;
+        font-weight: 700;
+    }
+    .btn_boite_interieur{
+        padding: 80px 20px 0;
+    }
+    .btn_amelioration{
+        background-color: #0B0B0D;
+        width: 100%;
+        height: 70px;
+        border-radius: 8px;
+        margin: 10px 0;
+    }
+    .btn_amelioration:hover{
+        background-color: #4f5758;
+        cursor: pointer;
+    }
+    .btn_amelioration h4{
+        padding: 15px 15px 0;
+        color: bisque;
+    }
+    .btn_amelioration p{
+        padding: 5px 15px;
+        color: aliceblue;
+        font-weight: 600;
+    }
+</style>
+</html>

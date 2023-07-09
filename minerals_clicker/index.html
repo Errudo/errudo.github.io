@@ -8,33 +8,50 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <div id="info_minerais">
-        <h1 id="nombre_minerais"></h1>
-        <h2 id="nombre_minerais_entier"></h2>
-        <h3 id="nombre_minerais_par_seconde">par seconde :</h3>
-    </div>
-    <div id="minerais_cliquable">
-        <a id="click_minerais" href="#"><img draggable="false" src="./assets/img/charbon.png" alt="minerais de charbon"></a>
-    </div>
-    <div id="amelioration_minerais_cliquable">
-        <div id="amelioration_minerais_cliquable_1">
-            <a href="#">
-                <h4>Pioche</h4>
-            </a>
+    
+    <div id="minerai_boite">
+        <div id="info_minerais">
+            <h1 id="nombre_minerais">minerais</h1>
+            <h2 id="nombre_minerais_entier"></h2>
+            <h3 id="nombre_minerais_par_seconde">par seconde : je test si c bien au milieu</h3>
         </div>
-        <div id="amelioration_minerais_cliquable_2">
-            <a href="#">
-                <h4>Récupération automatique</h4>
-            </a>
-            <p class="pas_assez_de_minerais"></p>
-        </div>
-        <div id="amelioration_minerais_cliquable_3">
-            <a href="#">
-                <h4>Amelioration 3</h4>
-            </a>
+        <div id="minerais_cliquable">
+            <a id="click_minerais" href="#"><img draggable="false" src="./assets/img/charbon.png" alt="minerais de charbon"></a>
         </div>
     </div>
-    <p>test</p>
+    <div id="btn_boite">
+        <p id="boutique">Boutique</p>
+        <div class="btn_boite_interieur">
+            <div id="amelioration_minerais_cliquable_1" class="btn_amelioration">
+                <a href="#">
+                    <h4 id="pioche_ameliorable">Pioche</h4>
+                </a>
+                <div class="cout_flex">
+                    <img src="./assets/img/charbon.png" alt="minerais de charbon">
+                    <p id="cout_pioche_ameliorable"></p>
+                </div>
+            </div>
+            <div id="amelioration_minerais_cliquable_2" class="btn_amelioration">
+                <a href="#">
+                    <h4 id="mineur_ameliorable">Mineur</h4>
+                </a>
+                <div class="cout_flex">
+                    <img src="./assets/img/charbon.png" alt="minerais de charbon">
+                    <p id="cout_mineur_ameliorable"></p>
+                </div>
+            </div>
+            <div id="amelioration_minerais_cliquable_3" class="btn_amelioration">
+                <a href="#">
+                    <h4 id="wagon_ameliorable">Wagon</h4>
+                </a>
+                <div class="cout_flex">
+                    <img src="./assets/img/charbon.png" alt="minerais de charbon">
+                    <p id="cout_wagon_ameliorable">400</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 <script>
