@@ -107,3 +107,12 @@ body{
 .cout_flex img{
     width: 30px;
 }
+.nombre_au_clique_css{
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    background-image: url("../img/+1.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 100000000000;
+}
